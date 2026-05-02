@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Gallery | Waiheke Island Ceremonies & Kombi Hire | The Sunny Soul Company</title>
+  <meta name="description" content="Browse real Waiheke Island wedding ceremonies and Solana the 1969 Kombi van in action. Beautiful moments from Linda Deverell's celebrations across Waiheke Island.">
+  <meta name="keywords" content="Waiheke Island wedding photos, Kombi hire photos Waiheke, wedding ceremony gallery Waiheke, 1969 Kombi wedding photos New Zealand">
+  <link rel="canonical" href="https://www.thesunnysoulcompany.co.nz/gallery">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "The Sunny Soul Company — Waiheke Island Wedding Gallery",
+    "description": "Photos from real Waiheke Island wedding ceremonies and Solana the 1969 Kombi van hire.",
+    "author": { "@type": "Person", "name": "Linda Deverell" }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+
+  <style>
+    .gallery-filter {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+    .gallery-filter__btn {
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 2px solid var(--cream-dark);
+      background: var(--white);
+      color: var(--text-light);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .gallery-filter__btn:hover,
+    .gallery-filter__btn.active {
+      background: var(--copper);
+      color: var(--white);
+      border-color: var(--copper);
+    }
+    .gallery-full {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .gallery-full .gallery-item {
+      aspect-ratio: 4/5;
+      transition: opacity 0.3s ease;
+    }
+    @media (max-width: 768px) {
+      .gallery-full { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .gallery-full { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav nav--solid" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="The Sunny Soul Company — Home">
+        <img src="images/logo.jpg" alt="The Sunny Soul Company logo">
+      </a>
+      <div class="nav__overlay"></div>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html"      class="nav__link">Home</a></li>
+        <li><a href="celebrant.html"  class="nav__link">Celebrant</a></li>
+        <li><a href="kombi-hire.html" class="nav__link">Kombi Hire</a></li>
+        <li><a href="about.html"      class="nav__link">About Linda</a></li>
+        <li><a href="gallery.html"    class="nav__link">Gallery</a></li>
+        <li><a href="contact.html"    class="nav__link nav__cta">Get in Touch</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero--inner" style="padding-top:var(--nav-height);" aria-label="Gallery hero">
+    <div class="hero__bg" style="background-image: url('images/bride-bridesmaids-kombi-hire-waiheke.jpg'); background-position: center 40%;"></div>
+    <div class="hero__overlay"></div>
+    <div class="container">
+      <div class="hero__content hero--center" style="text-align:center; margin:0 auto;">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <span>Gallery</span>
+        </nav>
+        <span class="eyebrow" style="color:rgba(255,255,255,0.7);">Real Moments on Waiheke Island</span>
+        <h1>Love in Every <em>Frame</em></h1>
+        <p>From barefoot beach ceremonies to vineyard celebrations — every love story is unique and beautifully told.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section">
+    <div class="container container--wide">
+
+      <!-- Filter buttons -->
+      <div class="gallery-filter reveal" role="group" aria-label="Filter gallery">
+        <button class="gallery-filter__btn active" data-filter="all">All Photos</button>
+        <button class="gallery-filter__btn" data-filter="ceremonies">Ceremonies</button>
+        <button class="gallery-filter__btn" data-filter="kombi">Solana the Kombi</button>
+        <button class="gallery-filter__btn" data-filter="signing">Register Signing</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-full reveal">
+
+        <div class="gallery-item"
+          data-src="images/waiheke-island-wedding-ceremony-harbour.jpg"
+          data-alt="Linda officiating a waterfront wedding ceremony on Waiheke Island with harbour views"
+          data-category="ceremonies">
+          <img
+            src="images/waiheke-island-wedding-ceremony-harbour.jpg"
+            alt="Linda Deverell officiating a waterfront wedding ceremony on Waiheke Island — bride, groom and celebrant with Hauraki Gulf backdrop"
+            loading="lazy">
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item"
+          data-src="images/solana-kombi-hire-waiheke-open.jpg"
+          data-alt="Solana the 1969 Kombi van with open door on Waiheke Island — available for wedding hire"
+          data-category="kombi">
+          <img
+            src="images/solana-kombi-hire-waiheke-open.jpg"
+            alt="Solana — Linda's 1969 Kombi van with open door showing white leather interior, available for wedding hire on Waiheke Island"
+            loading="lazy">
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item"
+          data-src="images/waiheke-garden-wedding-ceremony.jpg"
+          data-alt="Garden wedding ceremony on Waiheke Island with harbour views"
+          data-category="ceremonies">
+          <img
+            src="images/waiheke-garden-wedding-ceremony.jpg"
+            alt="Relaxed garden wedding ceremony on Waiheke Island — couple with baby and celebrant, harbour in background"
+            loading="lazy">
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item"
+          data-src="images/bride-bridesmaids-kombi-hire-waiheke.jpg"
+          data-alt="Bride and bridesmaids inside Solana the 1969 Kombi van on Waiheke Island"
+          data-category="kombi">
+          <img
+            src="images/bride-bridesmaids-kombi-hire-waiheke.jpg"
+            alt="Bride and bridesmaids seated inside Solana the 1969 Kombi van — white leather interior, Waiheke Island"
+            loading="lazy">
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item"
+          data-src="images/beach-wedding-ceremony-waiheke-island.jpg"
+          data-alt="Barefoot beach wedding ceremony on Waiheke Island with rocky shoreline"
+          data-category="ceremonies">
+          <img
+            src="images/beach-wedding-ceremony-waiheke-island.jpg"
+            alt="Barefoot beach wedding ceremony on Waiheke Island — casual, relaxed couple with celebrant on rocky shoreline"
+            loading="lazy">
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item"
+          data-src="images/wedding-couple-1969-kombi-waiheke.jpg"
+          data-alt="Groom kissing bride's hand at Solana the 1969 Kombi — romantic wedding photo Waiheke Island"
+          data-category="kombi">
+          <img
+            src="images/wedding-couple-1969-kombi-waiheke.jpg"
+            alt="Romantic wedding moment — groom kissing bride's hand at the door of Solana the 1969 Kombi van, Waiheke Island vineyard backdrop"
+            loading="lazy">
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item"
+          data-src="images/waiheke-wedding-register-signing.jpg"
+          data-alt="Couple signing the marriage register at Waiheke Island garden ceremony"
+          data-category="signing">
+          <img
+            src="images/waiheke-wedding-register-signing.jpg"
+            alt="Couple signing the marriage register at their Waiheke Island garden ceremony — officiated by Linda Deverell"
+            loading="lazy">
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item"
+          data-src="images/groomsmen-vintage-kombi-waiheke.jpg"
+          data-alt="Groomsmen having fun with Solana the vintage Kombi van at a Waiheke Island wedding"
+          data-category="kombi">
+          <img
+            src="images/groomsmen-vintage-kombi-waiheke.jpg"
+            alt="Groomsmen playfully posing with Solana the 1969 Kombi van at a Waiheke Island wedding — fun wedding transport photo"
+            loading="lazy">
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item"
+          data-src="images/beach-wedding-register-signing-waiheke.jpg"
+          data-alt="Signing the marriage register on the beach at Waiheke Island"
+          data-category="signing">
+          <img
+            src="images/beach-wedding-register-signing-waiheke.jpg"
+            alt="Signing the marriage register on the beach at Waiheke Island — casual beachside wedding"
+            loading="lazy">
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item"
+          data-src="images/linda-solana-kombi-waiheke.jpg"
+          data-alt="Linda Deverell with Solana the 1969 Kombi van on Waiheke Island"
+          data-category="kombi">
+          <img
+            src="images/linda-solana-kombi-waiheke.jpg"
+            alt="Linda Deverell leaning against Solana the 1969 Kombi van — Waiheke Island wedding celebrant and Kombi owner"
+            loading="lazy">
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+          </div>
+        </div>
+
+        <div class="gallery-item"
+          data-src="images/linda-with-solana-front.jpg"
+          data-alt="Linda Deverell standing in front of Solana the 1969 Kombi on Waiheke Island"
+          data-category="kombi">
+          <img
+            src="images/linda-with-solana-front.jpg"
+            alt="Linda Deverell standing in front of Solana the burnt copper 1969 Kombi van — Waiheke Island"
+            loading="lazy">
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <span class="eyebrow" style="color:rgba(255,255,255,0.7);">Your Story Next</span>
+      <h2>Ready to Create Your Own Beautiful Moments?</h2>
+      <p>Get in touch with Linda to start planning your Waiheke Island wedding — ceremony, Kombi, or both.</p>
+      <div class="cta-banner__buttons">
+        <a href="contact.html" class="btn btn--white">Send an Enquiry</a>
+        <a href="celebrant.html" class="btn btn--outline-white">Celebrant Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="images/logo.jpg" alt="The Sunny Soul Company">
+          <p>Waiheke Island wedding celebrant and owner of Solana — a 1969 Kombi van bringing retro charm and soul to your special day.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Services</h5>
+          <ul class="footer__links">
+            <li><a href="celebrant.html">Celebrant Services</a></li>
+            <li><a href="kombi-hire.html">Kombi Van Hire</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Explore</h5>
+          <ul class="footer__links">
+            <li><a href="about.html">About Linda</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+            <li><a href="celebrant.html#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <ul class="footer__contact">
+            <li>📍 Waiheke Island, Auckland, NZ</li>
+            <li>📞 <a href="tel:+64224206634">+64 (0) 22 420 6634</a></li>
+            <li>✉️ <a href="mailto:thesunnysoulcompany@gmail.com">thesunnysoulcompany@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 The Sunny Soul Company. All rights reserved. Waiheke Island, New Zealand.</p>
+        <p>Made with ☀️ on Waiheke Island</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
