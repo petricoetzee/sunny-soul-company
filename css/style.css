@@ -913,12 +913,14 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 56px;
 }
 
-.footer__brand img {
-  height: 52px;
-  width: auto;
-  margin-bottom: 16px;
-  filter: brightness(0) invert(1);
-  opacity: 0.9;
+.footer__brand-name {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--copper-light);
+  display: block;
+  margin-bottom: 14px;
+  line-height: 1.2;
 }
 
 .footer__brand p { font-size: 0.92rem; line-height: 1.7; }
