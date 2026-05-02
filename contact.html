@@ -158,33 +158,15 @@
             <h2 style="margin-bottom:8px;">Send an Enquiry</h2>
             <p style="margin-bottom:32px;">Fill in the form below and Linda will be in touch as soon as possible — usually within 24 hours.</p>
 
-            <!--
-              CONTACT FORM SETUP:
-              This form uses Web3Forms (https://web3forms.com) — a free service that
-              emails form submissions directly to Linda's inbox. No server needed.
-
-              TO ACTIVATE:
-              1. Go to https://web3forms.com
-              2. Enter: thesunnysoulcompany@gmail.com
-              3. Check email and copy the Access Key provided
-              4. Replace "YOUR_ACCESS_KEY_HERE" below with that key
-              5. Done! All form submissions will email Linda directly.
-            -->
             <form
               class="js-enquiry-form"
-              action="https://api.web3forms.com/submit"
+              action="https://formspree.io/f/mkoygkbo"
               method="POST"
               novalidate>
 
-              <!-- Web3Forms access key — replace with key from web3forms.com -->
-              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-              <input type="hidden" name="subject" value="New Enquiry — The Sunny Soul Company Website">
-              <input type="hidden" name="from_name" value="The Sunny Soul Company Website">
-              <input type="hidden" name="redirect" value="false">
-
-              <!-- Honeypot spam prevention -->
+              <!-- Formspree spam prevention -->
               <div class="form-group form-group--honeypot" aria-hidden="true">
-                <input type="text" name="botcheck" tabindex="-1" autocomplete="off">
+                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
               </div>
 
               <div class="form-grid">
