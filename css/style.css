@@ -19,7 +19,7 @@
   --text:          #1C1C1C;
   --text-light:    #5A5552;
   --white:         #FFFFFF;
-  --nav-height:    80px;
+  --nav-height:    92px;
   --shadow-sm:     0 2px 12px rgba(0,0,0,0.08);
   --shadow-md:     0 6px 28px rgba(0,0,0,0.12);
   --shadow-lg:     0 16px 48px rgba(0,0,0,0.16);
@@ -180,7 +180,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .nav__logo img {
-  height: 56px;
+  height: 76px;
   width: auto;
   transition: var(--transition);
 }
