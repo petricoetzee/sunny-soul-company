@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Clients | The Sunny Soul Company | Waiheke Island Celebrant</title>
+  <meta name="description" content="Read what couples say about Linda Deverell — Waiheke Island wedding celebrant and Kombi owner. Real reviews from real weddings on Waiheke Island.">
+  <meta name="keywords" content="Waiheke Island wedding celebrant reviews, Linda Deverell testimonials, The Sunny Soul Company reviews, Waiheke wedding testimonials">
+  <link rel="canonical" href="https://www.thesunnysoulcompany.co.nz/happy-clients">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+
+  <style>
+    .testimonials-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+    }
+
+    .testimonial-card--reverse {
+      grid-template-columns: 1.5fr 1fr;
+    }
+
+    .testimonial-card__photo {
+      overflow: hidden;
+    }
+
+    .testimonial-card__photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    .testimonial-card__body {
+      padding: 44px 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .testimonial-card--reverse .testimonial-card__photo {
+      order: 2;
+    }
+    .testimonial-card--reverse .testimonial-card__body {
+      order: 1;
+    }
+
+    .testimonial-card__quote {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .testimonial-card__quote::before {
+      content: '\201C';
+      font-size: 4rem;
+      color: var(--copper);
+      opacity: 0.3;
+      line-height: 0;
+      position: absolute;
+      top: 14px;
+      left: -8px;
+    }
+
+    .testimonial-card__attribution {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .testimonial-card__name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text);
+      letter-spacing: 0.04em;
+    }
+
+    .testimonial-card__date {
+      font-size: 0.8rem;
+      color: var(--copper);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .testimonial-card__stars {
+      font-size: 1rem;
+      color: var(--copper);
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    /* Small testimonial (Sue & Pablo — shorter quote) */
+    .testimonial-card--small {
+      grid-template-columns: 1fr;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .testimonial-card--small .testimonial-card__body {
+      padding: 44px 52px;
+      text-align: center;
+    }
+
+    .testimonial-card--small .testimonial-card__quote::before {
+      left: -4px;
+    }
+
+    .testimonial-card--small .testimonial-card__attribution {
+      align-items: center;
+    }
+
+    @media (max-width: 720px) {
+      .testimonial-card,
+      .testimonial-card--reverse {
+        grid-template-columns: 1fr;
+      }
+      .testimonial-card__photo {
+        height: 260px;
+      }
+      .testimonial-card--reverse .testimonial-card__photo { order: 0; }
+      .testimonial-card--reverse .testimonial-card__body  { order: 1; }
+      .testimonial-card__body {
+        padding: 32px 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav nav--solid" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="The Sunny Soul Company — Home">
+        <img src="images/logo.jpg" alt="The Sunny Soul Company logo">
+      </a>
+      <div class="nav__overlay"></div>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html"          class="nav__link">Home</a></li>
+        <li><a href="celebrant.html"      class="nav__link">Celebrant</a></li>
+        <li><a href="kombi-hire.html"     class="nav__link">Kombi Hire</a></li>
+        <li><a href="about.html"          class="nav__link">About Linda</a></li>
+        <li><a href="gallery.html"        class="nav__link">Gallery</a></li>
+        <li><a href="happy-clients.html"  class="nav__link">Happy Clients</a></li>
+        <li><a href="faq.html"            class="nav__link">FAQ</a></li>
+        <li><a href="contact.html"        class="nav__link nav__cta">Get in Touch</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div style="padding-top:var(--nav-height); background:var(--cream);">
+    <div class="container" style="padding-top:52px; padding-bottom:52px;">
+      <nav class="breadcrumb" style="color:var(--text-light);" aria-label="Breadcrumb">
+        <a href="index.html" style="color:var(--text-light);">Home</a>
+        <span style="margin:0 8px;">›</span>
+        <span>Happy Clients</span>
+      </nav>
+      <span class="eyebrow" style="margin-top:8px;">Real Words From Real Couples</span>
+      <h1 style="margin-bottom:0.5rem;">Love Stories <em>Shared</em></h1>
+      <p style="max-width:520px; font-size:1.05rem;">There's nothing Linda loves more than hearing that a couple's day was everything they dreamed of. Here's what some of her happy clients have to say.</p>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="testimonials-grid">
+
+        <!-- Chloe & Brandon -->
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__photo">
+            <img
+              src="images/chloe-brandon-champagne-toast-waiheke.jpg"
+              alt="Chloe and Brandon celebrating their wedding ceremony on Waiheke Island"
+              loading="lazy">
+          </div>
+          <div class="testimonial-card__body">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__quote">
+              We were incredibly lucky to have Linda as our wedding celebrant. She brought such a lovely presence to our small intimate ceremony. The way she delivered mine and Brandon's story was so special and sentimental, creating a moment we will never forget. Our ceremony felt personal, heartfelt and truly us, and that's thanks to Linda. We couldn't have asked for anyone better to guide us through such an important moment in our lives.
+              <br><br>
+              Highly, highly recommend her to any couple wanting a beautiful, thoughtful and memorable ceremony on Waiheke.
+            </p>
+            <div class="testimonial-card__attribution">
+              <span class="testimonial-card__name">Chloe &amp; Brandon</span>
+              <span class="testimonial-card__date">May 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Natalie & Molly -->
+        <div class="testimonial-card testimonial-card--reverse reveal reveal--delay-1">
+          <div class="testimonial-card__photo">
+            <img
+              src="images/just-married-barefoot-beach-waiheke.jpg"
+              alt="Just married couple walking barefoot on the beach at Waiheke Island"
+              loading="lazy">
+          </div>
+          <div class="testimonial-card__body">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__quote">
+              Linda was the perfect celebrant for our intimate civil union elopement ceremony, it was truly beautiful. She was so easy-going and made us feel so comfortable and relaxed from the get go. She even surprised us by picking us up from the ferry in her gorgeous Kombi, and following the ceremony she gave us a copy of the words she read to us, as on the day it was all a blur! So it was great to read them afterwards. We truly had a special day, one we will always remember thanks to Linda.
+            </p>
+            <div class="testimonial-card__attribution">
+              <span class="testimonial-card__name">Nat &amp; Mol</span>
+              <span class="testimonial-card__date">February 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sue & Pablo -->
+        <div class="testimonial-card testimonial-card--small reveal reveal--delay-2">
+          <div class="testimonial-card__body">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__quote">
+              Linda helped us with our special day. She was amazing and made sure it was exactly what we wanted.
+            </p>
+            <div class="testimonial-card__attribution">
+              <span class="testimonial-card__name">Sue &amp; Pablo</span>
+              <span class="testimonial-card__date">January 2026</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery strip -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom:40px;">
+        <span class="eyebrow">The Day in Pictures</span>
+        <h2>Moments From Chloe &amp; Brandon's Day</h2>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item"
+          data-src="images/linda-with-brandon-chloe-waiheke-ceremony.jpg"
+          data-alt="Linda with Chloe and Brandon at their Waiheke Island wedding ceremony"
+          data-category="ceremonies">
+          <img src="images/linda-with-brandon-chloe-waiheke-ceremony.jpg" alt="Linda Deverell with newlyweds Chloe and Brandon at their Waiheke Island ceremony" loading="lazy">
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+          </div>
+        </div>
+        <div class="gallery-item gallery-item--wide"
+          data-src="images/chloe-brandon-champagne-toast-waiheke.jpg"
+          data-alt="Chloe and Brandon champagne toast at their Waiheke Island wedding"
+          data-category="ceremonies">
+          <img src="images/chloe-brandon-champagne-toast-waiheke.jpg" alt="Chloe and Brandon celebrating with a champagne toast at their Waiheke Island wedding ceremony" loading="lazy">
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+          </div>
+        </div>
+        <div class="gallery-item"
+          data-src="images/chloe-brandon-beach-walk-waiheke.jpg"
+          data-alt="Chloe and Brandon walking on the beach at Waiheke Island"
+          data-category="ceremonies">
+          <img src="images/chloe-brandon-beach-walk-waiheke.jpg" alt="Chloe and Brandon walking hand in hand on the beach after their Waiheke Island wedding" loading="lazy">
+          <div class="gallery-item__overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:36px;">
+        <a href="gallery.html" class="btn btn--outline">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <span class="eyebrow" style="color:rgba(255,255,255,0.7);">Your Love Story Next</span>
+      <h2>Let's Make Your Day Unforgettable</h2>
+      <p>Every couple deserves a ceremony that feels completely, authentically them. Get in touch with Linda to start planning yours.</p>
+      <div class="cta-banner__buttons">
+        <a href="contact.html" class="btn btn--white">Send an Enquiry</a>
+        <a href="tel:+64224206634" class="btn btn--outline-white">📞 Call Linda</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__brand-name">The Sunny Soul Company</span>
+          <p>Waiheke Island wedding celebrant and owner of Solana — a 1969 Kombi van bringing retro charm and soul to your special day.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Services</h5>
+          <ul class="footer__links">
+            <li><a href="celebrant.html">Celebrant Services</a></li>
+            <li><a href="kombi-hire.html">Kombi Van Hire</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Explore</h5>
+          <ul class="footer__links">
+            <li><a href="about.html">About Linda</a></li>
+            <li><a href="happy-clients.html">Happy Clients</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+            <li><a href="celebrant.html#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <ul class="footer__contact">
+            <li>📍 Waiheke Island, Auckland, NZ</li>
+            <li>📞 <a href="tel:+64224206634">+64 (0) 22 420 6634</a></li>
+            <li>✉️ <a href="mailto:thesunnysoulcompany@gmail.com">thesunnysoulcompany@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 The Sunny Soul Company. All rights reserved. Waiheke Island, New Zealand.</p>
+        <p>Made by <a href="https://www.waihekeai.co.nz" target="_blank" rel="noopener">Waiheke AI Solutions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
